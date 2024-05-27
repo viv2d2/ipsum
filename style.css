@@ -1,0 +1,106 @@
+a,abbr,acronym,address,applet,article,aside,audio,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Chicory;
+  src: url(chicory.ttf);
+}
+.chicory {
+  font-family: Chicory;
+  font-size: 24px;
+  line-height: 32px;
+}
+body {
+  align-items: center;
+  color: #aaa;
+  background: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  font-family: Trebuchet MS, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 30px;
+  min-height: 100%;
+}
+header, main, footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  width: 600px;
+}
+header {
+  background: rgba(28, 28, 28, .95);
+  position: sticky;
+  top: 0;
+}
+h1 {
+  color: #ccc;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+}
+a {
+  border-bottom: 1px solid;
+  color: #aaa;
+  text-decoration: none;
+}
+a:hover {
+  color: #ddd;
+}
+.subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+p {
+  word-wrap: anywhere;
+}
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  header,
+  section {
+    width: calc(100% - 36px);
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background: #f8f8f8;
+    color: #222;
+  }
+  header {
+    background: rgba(248, 248, 248, .95);
+  }
+  h1, h2 {
+    color: #222;
+  }
+  a {
+    color: #444;
+  }
+  a:hover {
+    color: #999;
+  }
+}
