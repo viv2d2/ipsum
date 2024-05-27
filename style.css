@@ -12,7 +12,7 @@ a,abbr,acronym,address,applet,article,aside,audio,big,blockquote,body,canvas,cap
 }
 @font-face {
   font-family: Chicory;
-  src: url(chicory.ttf);
+  src: url('./chicory.ttf');
 }
 .chicory {
   font-family: Chicory;
